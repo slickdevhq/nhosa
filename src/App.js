@@ -8,6 +8,8 @@ import Academics from './pages/Academics';
 import Admissions from './pages/Admissions';
 import Contact from './pages/Contact';
 import News from './pages/News';
+import AchievingAlumni from './pages/AchievingAlumni';
+import TeachersOfTheYear from './pages/TeachersOfTheYear';
 import ScrollToTop from './components/ScrollToTop';
 
 // Admin imports
@@ -126,6 +128,26 @@ function App() {
             <ScrollToTop />
             <main className="flex-grow">
               <News />
+            </main>
+            <Footer />
+          </div>
+        } />
+        <Route path="/achieving-alumni" element={
+          <div className="min-h-screen flex flex-col">
+            <Navbar />
+            <ScrollToTop />
+            <main className="flex-grow">
+              <AchievingAlumni />
+            </main>
+            <Footer />
+          </div>
+        } />
+        <Route path="/teachers-of-the-year" element={
+          <div className="min-h-screen flex flex-col">
+            <Navbar />
+            <ScrollToTop />
+            <main className="flex-grow">
+              <TeachersOfTheYear />
             </main>
             <Footer />
           </div>
